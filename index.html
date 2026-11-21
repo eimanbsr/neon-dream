@@ -73,7 +73,7 @@
     #start .keys { display: flex; gap: 6px; }
     #start .key { min-width: 44px; height: 44px; padding: 0 10px; display: inline-flex; align-items: center; justify-content: center;
       border: 2px solid #fff; border-radius: 8px; color: #fff; font-size: 22px; font-weight: bold; background: rgba(255, 255, 255, 0.08); }
-    #start .arrows { width: 96px; height: 64px; display: block; }
+    #start .up { width: 22px; height: 22px; display: block; }
     #start .key.wide { min-width: 120px; font-size: 16px; letter-spacing: 2px; }
     #start .tagline { font-size: 14px; letter-spacing: 1px; color: #fff; white-space: nowrap; text-shadow: 0 0 8px #000; }
     #start .title { font-size: 46px; font-weight: bold; letter-spacing: 6px; color: #2ef6ff;
@@ -136,6 +136,7 @@
     #loader .bar { width: min(60vw, 420px); height: 10px; border-radius: 6px; border: 2px solid #49E7FF; overflow: hidden;
       box-shadow: 0 0 14px rgba(73, 231, 255, 0.6); }
     #loader .fill { height: 100%; width: 0%; background: linear-gradient(90deg, #49E7FF, #ff2e88); box-shadow: 0 0 12px #49E7FF; transition: width 0.2s; }
+    #loader .by { font-size: 13px; letter-spacing: 2px; color: #fff; opacity: 0.8; margin-top: -14px; }
     #loader .pct { font-size: 18px; letter-spacing: 3px; color: #fff; }
     @keyframes lpulse { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }
   </style>
@@ -149,7 +150,7 @@
   </script>
 </head>
 <body>
-  <div id="loader"><div class="lt">NEON DREAM</div><div class="bar"><div class="fill" id="lfill"></div></div><div class="pct" id="lpct">0%</div></div>
+  <div id="loader"><div class="lt">NEON DREAM</div><div class="by">By Eiman Basirati</div><div class="bar"><div class="fill" id="lfill"></div></div><div class="pct" id="lpct">0%</div></div>
   <div id="views">
     <div id="bar">
       <span class="label">View</span>
@@ -171,7 +172,7 @@
           <span class="trackpad"><svg class="hand" viewBox="0 0 65 71" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.2534 7.5C28.2534 5.01472 26.2387 3 23.7534 3C21.2681 3 19.2534 5.01472 19.2534 7.5V46.1211L10.6997 37.5684C8.86465 35.7333 5.86329 35.8211 4.13916 37.7607C2.55276 39.5457 2.63319 42.2577 4.32178 43.9463L23.1792 62.8047C26.5058 66.1313 31.0177 68 35.7222 68H46.3628C54.8628 68 61.7534 61.1094 61.7534 52.6094V28C61.7534 25.7909 59.9626 24 57.7534 24C55.5443 24 53.7534 25.7909 53.7534 28V36H50.7534V25.25C50.7534 22.9028 48.8506 21 46.5034 21C44.1562 21 42.2534 22.9028 42.2534 25.25V36H39.2534V24C39.2534 21.7909 37.4626 20 35.2534 20C33.0443 20 31.2534 21.7909 31.2534 24V36H28.2534V7.5ZM31.2534 18.2559C32.3874 17.4648 33.7659 17 35.2534 17C37.7638 17 39.9643 18.3223 41.1997 20.3076C42.5232 18.888 44.4095 18 46.5034 18C49.5833 18 52.2126 19.9212 53.2632 22.6299C54.4786 21.6125 56.0444 21 57.7534 21C61.6194 21 64.7534 24.134 64.7534 28V52.6094C64.7534 62.7662 56.5197 71 46.3628 71H35.7222C30.222 71 24.9473 68.815 21.0581 64.9258L2.19971 46.0684C-0.612092 43.2565 -0.74478 38.7397 1.89697 35.7676C4.76787 32.5378 9.76617 32.3907 12.8218 35.4463L16.2534 38.8779V7.5C16.2534 3.35786 19.6113 0 23.7534 0C27.8956 0 31.2534 3.35786 31.2534 7.5V18.2559Z" fill="currentColor"/></svg></span>
           <span>Move mouse to turn</span>
         </div>
-        <div class="tip"><svg class="arrows" viewBox="0 0 150 100" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="50" y="3" width="50" height="42" rx="8"/><path d="M75 36 V14 M67 22 L75 14 L83 22"/><rect x="3" y="55" width="42" height="42" rx="8"/><path d="M36 76 H14 M22 68 L14 76 L22 84"/><rect x="54" y="55" width="42" height="42" rx="8"/><rect x="105" y="55" width="42" height="42" rx="8"/><path d="M118 76 H140 M132 68 L140 76 L132 84"/></svg><span>Walk forward</span></div>
+        <div class="tip"><span class="keys"><span class="key"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span><span class="key">W</span></span><span>Walk forward</span></div>
         <div class="tip"><span class="keys"><span class="key wide">SPACE</span></span><span>Jump</span></div>
       </div>
     </div>
